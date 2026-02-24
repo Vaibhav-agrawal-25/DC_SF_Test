@@ -1,0 +1,40 @@
+dc_dbt_test:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "kia74307.us-east-1"
+      user: "load_user_dc_frontendtest_006"
+      private_key: |
+        -----BEGIN PRIVATE KEY-----
+        MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDLuK+rwkUAn0CD
+        dGrwUvAuOMUUCNhB7NJtRWgUcmIIi4+/OHaBwm+dLZIwkTjXiH0pTE8yYUhA2xRc
+        WOrFNr6Y9StC80mXJV5m77b8c9PqNtwL7C8z5JnmrFz7CrAi/ysyBuaY9lUmX7Af
+        fj8/VevpvkFLFmUSKXaZ3AYC6pld45C8sVvz5MGonjBt9g+v9XdStQ4uQPjLa0BM
+        BQbvfOaqtRBIMJENQWmJ79KmM11xrpniO9YHh+41ZskascboM3muBDvA4FWSvcsD
+        upkKsDSMztC0mVMqgPLjPJ8LAxnqhbIRqIfGVAXpZcFmvhvXfvepuWba/+hWEkmL
+        n/VKIE3rAgMBAAECggEACaXRw/ZA+E+SaZH419rFqcVh0poR9m/1uIZh8HNI9eij
+        bRs1GYi7anEptt0Zw7NLYh+isdsY5eFk1x7AN4i+gVXoWj+qoNrR3AQcNrEcPGpO
+        r3iG9RPYFKwzAbyMLOFytT14bDlg556pI5oB+sjh5uxDVqqqggVZVYitoYkPVvqF
+        71KcFUpky+lytt7fjzJj+EsWUg7J4MXAYCgV7f3ZFznAm4BEQKfqFmwtOenb+1gU
+        ObxLaSfwexx9PvTOXRIMt2Mhrhsi4Tb/ekR2DK6IiYcROWka1jtPonEWGsGlehjh
+        nKv8dUW75rctXhzUxqZYKTt2xGSWo7exjgPzYpR8gQKBgQDUaX/UyU2/7DWvzUyW
+        9YN61+4Yqbrt+vACzIoCeOB1m9YgDKfpnKKmD+F44R7Vk5jFOq7YX1sWSqgTWvAi
+        FEVGhw7KMjwXh/e3+F8e4UXxVR/IqkYv3u/GC+FdtR9Ula4riYsLnpxHQWfhJ9k0
+        4tqQ7zt2Jx5+hSShk36f5BfbKwKBgQD1hqU+615Vblvp0n0BV41bXHlDrBQ4i9S/
+        6Uu4Uzd5vYAfxuK36ln3YsYm5divI+NxB7z02Vx3Uzna8I37qkwjXKPq0LK7qZBS
+        Hz2lrG7A6q1Y46sEVhXRqa8RZfeMKg8BcNxQCGnPuHtadjJHzlwwbz5KdMBq3PiM
+        hsG660D4QQKBgQDL2jQEUu17M4aSocTPW/BDBNhMcxgjLKELDqGknb1NIbHuMDc1
+        zE2McdFB4UtmTbBgGGGU5m7UhfGoIa40BqA1f4iCJJPnQWZL+OHREQG/CqLmQgP6
+        DUqwFtbCyAC5fK0au3XmQOJawDqhq0yZpN1+GxpF2mU5py3wo0zyxkTe4QKBgQDY
+        xcZDpP8mokcYTDT96FTvoteVveokeqCdx9aIqUBDheIHLEujYY+I8XZNhYUoLKF0
+        fAaCjx4qZBqiiNxyo8qRNgurGBOVyIGZX+fHzFQEk6302x10uKSO9ieRTtuersuM
+        1B5Psv3o3dJa7hw6daHDSZRPnID+WJZBTADjjS1RgQKBgQCOvIAoXWLsE07Uej/V
+        WFsfWPIq1gH0SIcYkxE6eMJnF+dNGwb34r9Mb3RLIcyotZ3i/uGcI9RV9E3jro+P
+        5icYBeP1pWAyyuBwO25hLfO4ihvOMRaCNNRB3LkhS12FMZGuN4nRk+KGUqw9dW7y
+        T7L14jnEiCP7ydQljLB0N/de8Q==
+        -----END PRIVATE KEY-----
+      database: "dc_frontendtest_006"
+      warehouse: "COMPUTE_WH"
+      schema: "DC_DC_FRONTENDTEST_006"
+      threads: 4
