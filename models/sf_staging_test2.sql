@@ -39,7 +39,7 @@ finalTable as (
 
         search_terms."searchterm",
         search_terms."clickedasin",
-        search_terms."marketplace_id"
+        search_terms."marketplace_id",
 
         inventory_ledger."marketplace_id",
         inventory_ledger."seller_name"
