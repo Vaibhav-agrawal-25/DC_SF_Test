@@ -7,7 +7,7 @@ with fba_returns as (
     SELECT
         cast("return_date" as date) as "f_date",
         *
-    FROM DC_DC_FRONTENDTEST_006.ASC_VAHDAM_FBARETURNSREPORT
+    FROM dc_frontendtest_006.DC_DC_FRONTENDTEST_006.ASC_VAHDAM_FBARETURNSREPORT
 
 ),
 
@@ -16,7 +16,7 @@ search_terms as (
     SELECT
         cast("dataendtime" as date) as "s_date",
         *
-    FROM DC_DC_FRONTENDTEST_006.ASC_BETTERBEING_SEARCHTERMS
+    FROM dc_frontendtest_006.DC_DC_FRONTENDTEST_006.ASC_BETTERBEING_SEARCHTERMS
 
 ),
 
@@ -25,7 +25,7 @@ inventory_ledger as (
     SELECT
         cast("date" as date) as "i_date",
         *
-    FROM DC_DC_FRONTENDTEST_006.ASC_BETTERBEING_INVENTORYLEDGERSUMMARY
+    FROM dc_frontendtest_006.DC_DC_FRONTENDTEST_006.ASC_BETTERBEING_INVENTORYLEDGERSUMMARY
 
 ),
 
