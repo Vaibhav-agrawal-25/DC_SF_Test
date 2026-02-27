@@ -41,8 +41,8 @@ finalTable as (
         search_terms."clickedasin",
         search_terms."marketplace_id",
 
-        inventory_ledger."marketplace_id",
-        inventory_ledger."seller_name"
+        inventory_ledger."title",
+        inventory_ledger."msku"
 
     from fba_returns
 
